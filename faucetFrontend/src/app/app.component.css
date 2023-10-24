@@ -1,0 +1,45 @@
+h1 {
+    font-weight: 100;
+    letter-spacing: 0.15em;
+    text-shadow: 0px 0px 3px #ccc;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    box-shadow: 0px 3px 2px #777;
+    padding-left: 10px;
+}
+
+h2 {
+    font-weight: 300;
+    color: #ce1136;
+    margin: 30px 0px 3px 0px;
+}
+
+.codeArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--dark-blue);
+    margin: 0px 0px 10px 0px;
+}
+
+.codeArea h3 {
+    background-color: var(--dark-blue);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.codeArea p {
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+h2:first-child {
+    margin-top: 0px;
+}

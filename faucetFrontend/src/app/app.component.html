@@ -1,31 +1,28 @@
 <h1>Intro to a Dapp</h1>
+<main>
 
-<h2>Set up Network</h2>
-<p>video showing where to run the commands.</p>
-
-<h2>Connect your Wallet to the correct Network.</h2>
-<p>Video showing</p>
-
-<h2>Connecting a wallet</h2>
-<div class="codeArea">
-  <h3>faucet.service.ts</h3>
-  <p>lines 23 - 30</p>
-</div>
-<!-- This button calles the connectWallet from the faucet.service -->
-<button (click)="faucet.connectWallet()">Connect Wallet</button>
+  <h2>Connecting a wallet</h2>
+  <div class="codeArea">
+    <h3>faucet.service.ts</h3>
+    <p>lines 23 - 30</p>
+  </div>
+  <!-- This button calles the connectWallet from the faucet.service -->
+  <button (click)="faucet.connectWallet()">Connect Wallet</button>
 
 
-<h2>Add the faucet address</h2>
-<p>Video on finding this. </p>
-<input type="text" placeholder="faucet address" [(ngModel)]="faucet.contractAddress">
+  <h2>Add the Faucet Contract Address</h2>
+  <p>This is located in the terminal where you deployed the script. It listed the address along with the amount of wei
+    that was available. </p>
+  <input type="text" placeholder="faucet address" [(ngModel)]="faucet.contractAddress">
 
-<h3>Get yourself some money</h3>
-<div class="codeArea">
-  <h3>faucet.service.ts</h3>
-  <p>lines 32 - 42</p>
-</div>
-<button (click)="faucet.request20Eth()">Request Eth</button>
+  <h2>Get yourself some money</h2>
+  <div class="codeArea">
+    <h3>faucet.service.ts</h3>
+    <p>lines 32 - 42</p>
+  </div>
+  <button (click)="faucet.request20Eth()">Request Eth</button>
 
-<h3>Oops</h3>
-<p>You do not have enough money to request money.</p>
-<p>Video on adding your address to get a tiny bit of eth to request more.</p>
+  <h2>Oops</h2>
+  <p>You do not have enough money to request money. We will need to fix the original deploy script to give us enough
+    chnage to request money.</p>
+</main>
